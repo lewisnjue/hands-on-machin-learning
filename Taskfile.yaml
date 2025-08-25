@@ -1,0 +1,17 @@
+version: '3'
+tasks:
+  up:
+    desc: "BRINGING UP THE SERVICES"
+    cmds:
+      - echo -e "\033[1;32m🚀 BRINGING UP THE SERVICES\033[0m"
+      - docker compose up
+  upb:
+    desc: "BRINGING UP THE SERVICES AND BUILDING"
+    cmds:
+      - echo -e "\033[1;34m🔨 BRINGING UP THE SERVICES AND BUILDING\033[0m"
+      - docker compose up --build
+  down:
+    desc: "BRINGING DOWN THE SERVICES"
+    cmds:
+      - echo -e "\033[1;31m🛑 BRINGING DOWN THE SERVICES\033[0m"
+      - docker compose down
